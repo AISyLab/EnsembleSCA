@@ -3,4 +3,4 @@ Repository code to support paper TCHES2020 (issue 4) paper "Strength in Numbers:
 
 Link to the paper: https://tches.iacr.org/index.php/TCHES/article/view/8686
 
-Authors: Guilherme Perin (Delft University of Technology, The Netherlands), Łukasz Chmielewski (Radboud University Nijmegen and Riscure BV)and Stjepan Picek (Delft University of Technology, The Netherlands)
+Authors: Guilherme Perin (Delft University of Technology, The Netherlands), Łukasz Chmielewski (Radboud University Nijmegen and Riscure BV) and Stjepan Picek (Delft University of Technology, The Netherlands)
