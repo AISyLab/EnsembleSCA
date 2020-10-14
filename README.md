@@ -42,4 +42,28 @@ ensemble_aes.run_ensemble(
 )
 ```
 
-In the example above, the analysis will generate 50 models and create ensembles from the 50 models and from the 10 best models.
+In the example above, the analysis will generate 50 models and create ensembles from the 50 models and from the 10 best models. After __run_ensemble__ method is finished, the user can plot guessing entropy and success rate for ensembles all models, ensembles best models, best validation model and best attack model. As an example, the following code can be used to generate the plot:
+
+```python
+import matplotlib.pyplot as plt
+plt.subplot(1, 2, 1)
+plt.plot(ensemble_aes.get_ge_best_model_validation(), label="GE best validation")
+plt.plot(ensemble_aes.get_ge_best_model_attack(), label="GE best attack")
+plt.plot(ensemble_aes.get_ge_ensemble(), label="GE Ensemble All Models")
+plt.plot(ensemble_aes.get_ge_ensemble_best_models(), label="GE Ensemble Best Models")
+plt.xlabel("Traces")
+plt.ylabel("Guessing Entropy")
+plt.legend()
+plt.subplot(1, 2, 2)
+plt.plot(ensemble_aes.get_sr_best_model_validation(), label="SR best validation")
+plt.plot(ensemble_aes.get_sr_best_model_attack(), label="SR best attack")
+plt.plot(ensemble_aes.get_sr_ensemble(), label="SR Ensemble All Models")
+plt.plot(ensemble_aes.get_sr_ensemble_best_models(), label="SR Ensemble Best Models")
+plt.xlabel("Traces")
+plt.ylabel("Success Rate")
+plt.legend()
+plt.show()
+```
+
+### Neural Networks ###
+The provided code generate MLP or CNN with random hyperparameters according to certain user-defined ranges. In __commons/ensemble_aes.py__, the user can find the methods __run_mlp()__ and __run_cnn()__ for random MLPs and random CNNs, respectively. In __commons/neural_networks.py__ we provide the structure for the neural networks.
