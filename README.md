@@ -1,5 +1,5 @@
 # Ensemble for Deep Learning-based Profiled Side-Channel Attacks
-Repository code to support paper TCHES2020 (issue 4) paper "Strength in Numbers: Improving Generalization with Ensembles in Machine Learning-based Profiled Side-channel Analysis"
+Repository code to support paper TCHES2020 (issue 4) paper "__Strength in Numbers: Improving Generalization with Ensembles in Machine Learning-based Profiled Side-channel Analysis__"
 
 Link to the paper: https://tches.iacr.org/index.php/TCHES/article/view/8686
 
