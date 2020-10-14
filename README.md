@@ -20,3 +20,26 @@ Information about ASCAD FIXED KEY dataset can be found in the original github pa
 
 ### ASCAD RANDOM KEY dataset ###
 Information about ASCAD RANDOM KEY dataset can be found in the original github page: https://github.com/ANSSI-FR/ASCAD/tree/master/ATMEGA_AES_v1/ATM_AES_v1_variable_key
+
+## Code ##
+
+This section provides explanations on how to run the ensemble SCA code on the above datasets.
+
+### Code execution ###
+
+The ensemble code should be executed from __run_ensemble.py__ file. This file contain the following structure:
+
+```python
+ensemble_aes = EnsembleAES()
+ensemble_aes.set_dataset("ches_ctf")  # "ascad_fixed_key", "ascad_random_key" or "ches_ctf"
+ensemble_aes.set_leakage_model("HW")
+ensemble_aes.set_target_byte(0)
+ensemble_aes.set_mini_batch(400)
+ensemble_aes.set_epochs(10)
+ensemble_aes.run_ensemble(
+    number_of_models=50,
+    number_of_best_models=10
+)
+```
+
+In the example above, the analysis will generate 50 models and create ensembles from the 50 models and from the 10 best models.
