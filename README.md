@@ -9,7 +9,7 @@ Authors: Guilherme Perin (Delft University of Technology, The Netherlands), Łuk
 The source code is prepared for three datasets: CHES CTF, ASCAD FIXED KEYS, ASCAD RANDOM KEYS.
 
 ### CHES CTF dataset ###
-This dataset contains 45,000 profiling traces, with a fixed key, and additional 5,000 attacking traces with a different and fixed key. Each trace contains 2,200 samples that represent the processing of s-box operations around the first AES encryption round (Original CHES CTF webpage https://chesctf.riscure.com/2018/content?show=training provides only 10l traces for each device. The traces are already normalized with z-score normalization).
+This dataset contains 45,000 profiling traces, with a fixed key, and additional 5,000 attacking traces with a different and fixed key. Each trace contains 2,200 samples that represent the processing of s-box operations around the first AES encryption round (Original CHES CTF webpage https://chesctf.riscure.com/2018/content?show=training provides only 10k traces for each device. The traces are already normalized with z-score normalization).
 
 #### Download ####
 CHES CTF dataset (ches_ctf.h5 file) can be downloaded from: https://www.dropbox.com/s/lpw1k3so99krmmq/ches_ctf.h5?dl=0
